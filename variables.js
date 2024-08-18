@@ -232,3 +232,31 @@ window.addEventListener("resize", () => {
 // }
   
 
+
+
+
+var name ="hitech"
+var name ="mentor"
+{
+
+
+
+
+}
+function(){
+
+}
+if (){
+
+}
+for (){
+
+}
+let _name  
+let Name =15;
+Name=17;
+let naMe
+var name=12;
+age=14sajhajh;
+
+

@@ -22,14 +22,14 @@
 // A. integer =1,2,3 ,4 5, 6,-4
 // B. floaing point = 1.02, 1.4455,0.00000000234, -0.3435,
 // 2.string  //let name="",let name1='',
-// 3.BigInt
+// 3.BigInt   
 // 4.Boolean
 // 5.undefined
-// 6.null
+// 6.null 
 // 7.Symbol
 // 8.Object //non
 
-// let age =12;
+// let age =12hfgff;
 
 // example numbers
 // const number1=3;
@@ -218,3 +218,6 @@
 
 // let res=obj.toString();
 // console.log(typeof(res));
+
+
+// let name=parseFloat(prompt("enter your name:"))
