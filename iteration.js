@@ -372,7 +372,7 @@ i=4
  *****
 ******* 
 
-row      space      Star 
+row         space      Star 
 i=1     j=3 n-i      1 =2*i-1
 i=2     j=2 n-i      3 =2*i-1
 i=3     j=1 n-i      5 =2*i-1
@@ -473,16 +473,84 @@ assignment
 *
 
 
+// row=i=5 
+// col=j=5
+//i=j
+let n =5
+
+   
+
+for (let i=5; i>=1; i--){
+    let str =""
+    for (let j=1; j<=i; j++){
+    str=str+"*"
+    }
+    console.log(str)
+}
+
+i=5 
+   j=1 
+      *
+   j=2
+      **
+   j=3
+      ***
+    j=4
+     ****
+     j= 5
+     ***** 
+
+     *****
+
+
+
 2.
-*****
+*****    
  ***
   *
-  
+  row      space      star      
+  i=3        j= 0 n-i    k=5
+  2       j= 1  n-i   k=3
+  1       j= 2   n-i  k=1
+
+ let n=3;
+
+for (let i=n; i>=1; i--){
+    let str=""
+    for (let j=1;j<=n-i; j++ ){
+        str=str+" "
+    }
+
+    for (let k=1; k<=2*i-1 ; k++){
+        str=str+"*"
+    }
+    console.log(str)
+}
+
+
 3.
  1
  2 3
  4 5 6
  7 8 9 10 
+
+ row=4
+ col=4
+
+ let n=4
+
+  let count =1
+ for (let i=1; i<=n ; i++){
+
+  let str =""
+
+  for (let j=1; j<=i; j++){
+      str=str+count+ " ";
+      count++
+ }
+ console.log(str)
+
+ }
 
  4.
     *
@@ -491,6 +559,19 @@ assignment
  ****
  
 
+ let n=4;
+for (let i=1; i<=n; i++){
+    let str=""
+    for (let j=1;j<=n-i; j++ ){
+        str=str+" "
+    }
+
+    for (let k=1; k<=i ; k++){
+        str=str+"*"
+    }
+    console.log(str)
+}
+
  5.
  1 2 3 4 5
  1 2 3 4
@@ -498,14 +579,48 @@ assignment
  1 2
  1
 
+ let n=5
+
+
+ for (let i=n; i>=1 ; i--){
+
+  let str =""
+  for (let j=1; j<=i; j++){
+      str=str+j+" ";
+ }
+ console.log(str)
+
+ }
  6.
  *****
  *   *
  *   *
  *****
 
+ row= let n=4
+ col=5 let m=5
+
+ star    i=1,  i=n ,j=1 ,j=m
+space 
+\
+let n=4;
+let m=5;
+ for (let i=1; i<=n; i++){
+  
+   let str =" ";
+
+   for (j=1; j<=m; j++){
+if (i===1||i===n||j===1||j===m){
+   str +="* "
+}else{
+   str+=" "
+}
 
 
+   }
+
+console.log(str)
+ }
 
 
 

@@ -76,19 +76,19 @@
 // MyFunction();
 
 // 10. Declare a variable without assigning a value.
-let name ;
+// let name ;
 // name =10;
-var age;
-let address;
+// var age;
+// let address;
 
 
 
 
 // 11. Create variables for a first name, last name, and age. Apply camelCase naming convention .
-let myFisrtName;
-myFisrtName="sam";
-let MyLastName="hitech";
-let myAge=10;
+// let myFisrtName;
+// myFisrtName="sam";
+// let MyLastName="hitech";
+// let myAge=10;
 
 
 
