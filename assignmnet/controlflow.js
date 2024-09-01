@@ -2,8 +2,6 @@
 // 1. Write code that checks if the variable `num` is greater than 10. If it is, print "Greater than 10".
 //    let num = 15;  // You can change this value to test
 
-   
-
 // if (num > 10) {
 //     console.log("Greater than 10");
 // }
@@ -46,30 +44,30 @@
 //    - 7 for "Sunday"
 
 
-//    let day = 4;  // You can change this value to test
-
+//    let day = prompt("enter day number:");  // You can change this value to test
+// let day=4;
 
 
 //    switch (day) {
-//     case 1:
+//     case "1":
 //         console.log("Monday");
 //         break;
-//     case 2:
+//     case "2":
 //         console.log("Tuesday");
 //         break;
-//     case 3:
+//     case "3":
 //         console.log("Wednesday");
 //         break;
-//     case 4:
+//     case "4":
 //         console.log("Thursday");
 //         break;
-//     case 5:
+//     case "5":
 //         console.log("Friday");
 //         break;
-//     case 6:
+//     case "6":
 //         console.log("Saturday");
 //         break;
-//     case 7:
+//     case "7":
 //         console.log("Sunday");
 //         break;
 //     default:
@@ -77,7 +75,7 @@
 // }
 // 5. Write code that checks if the variable `num` is between 10 and 20 (inclusive). Print "In range" if it is, otherwise print "Out of range".
 
-//    let num = 15;  // You can change this value to test
+//    let num = 10;  // You can change this value to test
 
 
 //    if (num >= 10 && num <= 20) {
@@ -87,7 +85,7 @@
 // }
 // 6. Write code that checks if the variable `num` is positive. If it is, then check if it is greater than 100. Print "Large Positive" if it is greater than 100; otherwise, print "Small Positive".
    
-// let num = 120;  // You can change this value to test
+// let num = -5;  // You can change this value to test
    
 
 //    if (num > 0) {
@@ -101,9 +99,9 @@
 // }
 //    7.Write code that checks if the variable `num` is even or odd. Print "Even" if it is even, and "Odd" if it is odd.
    
-//    let num = 7;  // You can change this value to test
+//    let num = 5;  // You can change this value to test
 
-//    if (num % 2 === 0) {
+//    if (num %2 === 0) {
 //     console.log("Even");
 // } else {
 //     console.log("Odd");
@@ -120,7 +118,7 @@
 //    Make sure to include a `default` case for any other value.
 
 
-//    let vehicleType = "plane";  // You can change this value to test
+//    let vehicleType = "Car";  // You can change this value to test
 
 
 
@@ -147,7 +145,7 @@
 //    - "Teenager" for ages between 13 and 19
 //    - "Adult" for ages 20 and above
    
-//    let age = 16;  // You can change this value to test
+//    let age = 20;  // You can change this value to test
 
 //    if (age < 13) {
 //     console.log("Child");
@@ -172,50 +170,50 @@
 //     - 12 for "December"
 
 
-//     let month = 7;  // You can change this value to test
+    // let month = parseInt(prompt("Enter months number:"))  // You can change this value to test
 
 
 
-//     switch (month) {
-//         case 1:
-//             console.log("January");
-//             break;
-//         case 2:
-//             console.log("February");
-//             break;
-//         case 3:
-//             console.log("March");
-//             break;
-//         case 4:
-//             console.log("April");
-//             break;
-//         case 5:
-//             console.log("May");
-//             break;
-//         case 6:
-//             console.log("June");
-//             break;
-//         case 7:
-//             console.log("July");
-//             break;
-//         case 8:
-//             console.log("August");
-//             break;
-//         case 9:
-//             console.log("September");
-//             break;
-//         case 10:
-//             console.log("October");
-//             break;
-//         case 11:
-//             console.log("November");
-//             break;
-//         case 12:
-//             console.log("December");
-//             break;
-//         default:
-//             console.log("Invalid month");
-//     }
+    // switch (month) {
+    //     case 1:
+    //         console.log("January");
+    //         break;
+    //     case 2:
+    //         console.log("February");
+    //         break;
+    //     case 3:
+    //         console.log("March");
+    //         break;
+    //     case 4:
+    //         console.log("April");
+    //         break;
+    //     case 5:
+    //         console.log("May");
+    //         break;
+    //     case 6:
+    //         console.log("June");
+    //         break;
+    //     case 7:
+    //         console.log("July");
+    //         break;
+    //     case 8:
+    //         console.log("August");
+    //         break;
+    //     case 9:
+    //         console.log("September");
+    //         break;
+    //     case 10:
+    //         console.log("October");
+    //         break;
+    //     case 11:
+    //         console.log("November");
+    //         break;
+    //     case 12:
+    //         console.log("December");
+    //         break;
+    //     default:
+    //         console.log("Invalid month");
+    // }
     
 
 
