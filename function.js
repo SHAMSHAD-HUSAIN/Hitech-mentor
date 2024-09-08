@@ -152,3 +152,271 @@
 // }
 
 // celciusTOFahrenheit(45)
+
+// Function to generate OTP
+// function generateOTP() {
+		
+// 	// Declare a digits variable
+// 	// which stores all digits
+// 	var digits = '0123456789';
+// 	let OTP = '';
+// 	for (let i = 0; i < 4; i++ ) {
+// 		OTP += digits[Math.floor(Math.random() * 10)];
+// 	}
+// 	return OTP;
+// }
+
+// console.log("OTP of 4 digits: ", generateOTP())
+
+
+// JavaScript Hoisting:
+
+// 	Hoisting in JavaScript is a behavior in which a function or a variable can be 
+//            used before declaration.
+
+           
+//  Example:
+ // using test before declaring
+//  console.log(test);   // undefined
+//  var test = "Hello";
+ 
+// using test before declaring
+// var test = "Hello";
+// console.log(test); // Hello 
+
+
+// Note: In hoisting, though it seems that the declaration has moved up
+//  in the program, the actual thing that happens is that the function 
+//  and variable declarations are added to memory during the compile phase.
+// (execution context phase created or global execution context )
+
+//  There are two types of Hoisting:
+// Variable Hoisting
+// Function Hoisting
+
+// A. Variable Hoisting:
+//   	In terms of variables and constants, keyword var is hoisted and let and const 
+// does not allow hoisting.
+
+// Example:
+// program to display value
+// a = 5;
+// console.log(a);
+// var a; // 5
+
+// In the above example, variable a is used before declaring it. And the program works and displays the output 5. The program behaves as:
+
+// program to display value
+// var a;
+// a = 5;
+// console.log(a); // 5
+
+
+// However in JavaScript, initializations are not hoisted. For example,
+// program to display value
+// console.log(a);
+// var a = 5;
+
+
+// The above program behaves as:
+// var a;
+// console.log(a);
+// a = 5;
+
+
+
+// Only the declaration is moved to the memory in the compile phase. Hence, the value of variable a is undefined because a is printed without initializing it.
+
+// Also, when the variable is used inside the function, the variable is hoisted only to the top of the function.
+// Example:
+// program to display value
+// var a = 4;
+
+// function greet() {
+//     b = 'hello';
+//     console.log(b); // hello
+//     var b;
+// }
+
+// greet(); // hello
+// console.log(b);
+
+
+// In the above example, variable b is hoisted to the top of the function greet and becomes a local variable. Hence b is only accessible inside the function. b does not become a global variable.
+
+
+
+// B. Function Hoisting
+// A function can be called before declaring it.
+// program to print the text
+// greet();
+
+// function greet() {
+//     console.log('Hi, there.');
+// }
+
+
+
+// 17. JavaScript Recursion:
+//     Recursion is a process of calling itself. A function that calls itself is called a 
+//    recursive function. 
+// The syntax for recursive function is: 
+// function recurse() {
+    // function code
+//     recurse();
+    // function code
+// }
+
+// recurse();
+
+// A recursive function must have a condition to stop calling itself.
+//  Otherwise, the function is called indefinitely.
+
+//  function recurse() {
+//     if(condition) {
+//         recurse();
+//     }
+//     else {
+//         stop calling recurse()
+//     }
+// }
+
+// recurse();
+
+
+
+// find factorial
+// 5=5*4*3*2*1=120    x * factorial(x - 1);
+// 3=3*2*1=6
+
+function factorial(x) {
+
+    // if number is 0
+    if (x === 0) {
+        return 1;
+    }
+
+    // if number is positive
+    else {
+        return x * factorial(x - 1);
+    }
+}
+
+const num = 3;
+
+// calling factorial() if num is non-negative
+if (num > 0) {
+    let result = factorial(num);
+    console.log(`The factorial of ${num} is ${result}`);
+}
+
+
+
+// x * factorial(x - 1);
+// 3* factorial(2)
+// 3*  2*factorial(1)
+// 3*2*1*factorial(0)
+// 3*2*1*1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var x =5;
+// function myfunction(){
+//     console.log("hitech mentor")
+// }
+// console.log(x)
+// myfunction();
+
+
+
+
+// function ===>Otp , 4 digit , random 
+
+
+// string=""
+
+// var digits="hitechmentor"
+
+// console.log(digits[4])
+// let OTP ="";
+
+
+// Math.random =0-1 decimal
+
+// 0-9
+// 0.1*10 =1
+// 0.3*10=3
+// console.log(Math.random()*10);
+// console.log(Math.random()*10);
+// console.log(Math.random()*10);
+// console.log(Math.random()*10);
+// console.log(Math.random()*10);
+// console.log(Math.random()*10);
+// console.log(Math.random()*10);
+
+
+// console.log(Math.floor(1.2))//
+
+// console.log(Math.floor(3.4))//
+// console.log(Math.floor(5.9))//
+// console.log(Math.floor(6.0))//
+// console.log(Math.floor(7.1))//
+
+
+
+// function OTPgenerate(){
+//     var digits="0123456789"
+//     let OTP ="";
+//     for (let i=0; i<4; i++){
+//         OTP=OTP+digits[Math.floor(Math.random()*10)]
+//     }
+//     console.log(OTP)
+// }
+// OTPgenerate();
+// OTPgenerate();
+// OTPgenerate();
+// OTPgenerate();
+// OTPgenerate();
+// OTPgenerate();
+// OTPgenerate();
+// OTPgenerate();
+// OTPgenerate();
+// OTPgenerate();
+
+
+
+// hoisting:
+
+// console.log(x)//8
+// myfunction()//hitech mentor
+// console.log(myfunction)
+
+// var x=8;
+// function myfunction(){
+//     console.log("hitech mentor")
+// }
+
+// x=undefined
+// hitech mentor
+// function myfunction(){
+//     console.log("hitech mentor")
+// }
+// var and function
