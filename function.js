@@ -420,3 +420,9 @@ if (num > 0) {
 //     console.log("hitech mentor")
 // }
 // var and function
+
+
+// console.log(Math.sin(0))
+
+
+function
