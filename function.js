@@ -289,26 +289,26 @@
 // 5=5*4*3*2*1=120    x * factorial(x - 1);
 // 3=3*2*1=6
 
-function factorial(x) {
+// function factorial(x) {
 
-    // if number is 0
-    if (x === 0) {
-        return 1;
-    }
+//     // if number is 0
+//     if (x === 0) {
+//         return 1;
+//     }
 
-    // if number is positive
-    else {
-        return x * factorial(x - 1);
-    }
-}
+//     // if number is positive
+//     else {
+//         return x * factorial(x - 1);
+//     }
+// }
 
-const num = 3;
+// const num = 3;
 
 // calling factorial() if num is non-negative
-if (num > 0) {
-    let result = factorial(num);
-    console.log(`The factorial of ${num} is ${result}`);
-}
+// if (num > 0) {
+//     let result = factorial(num);
+//     console.log(`The factorial of ${num} is ${result}`);
+// }
 
 
 
@@ -425,4 +425,36 @@ if (num > 0) {
 // console.log(Math.sin(0))
 
 
-function
+
+//     function Addition(){
+//         let a =6
+//      let b = 7
+
+//     let sum =a+b;
+//   console.log(sum)
+//     }
+
+//     Addition();
+//     Addition();
+//     Addition();
+//     Addition();
+
+
+
+    function Addition(num1,num2){
+    
+        let sum =num1+num2;
+      console.log(sum)
+        }
+    
+        
+      let a= prompt("Enter first number:")
+      console.log(a)
+      let b= prompt("Enter first number:")
+      console.log(b)
+        Addition(a,b);
+       
+
+// callback function
+// promise 
+
