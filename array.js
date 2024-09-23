@@ -328,6 +328,7 @@ const result=voterAge.filter((age)=>age>18);
 // 8.includes()
 // 8.includes()
 // 8.includes()
+// return bolean 
 
 let text="Hello javascript,welcome to the universe."
 let resulttext=text.includes("universe");
@@ -380,5 +381,99 @@ const Names=["anil","shahibe","monish","shoaib","rehan","afzal"]
 // splice (startindex,counting,newelement....)
 let splicefruits=["mango","apple","orange","papaya","pineapple","grapes","guava"]
 let removesplice=splicefruits.splice(2,4,"coconut","dates")
-console.log(splicefruits)
-console.log(removesplice)
+// console.log(splicefruits)
+// console.log(removesplice)
+
+
+
+//multidimention array 
+//multidimention array 
+//multidimention array 
+
+
+// let mularray=[
+//    0 ["java","javascript"],
+//         0       1
+//     1 ["python","dbms","dotnet","mongodb",],
+//          0        1       2        3
+//     2 ["DSA","OS"]
+//          0    1
+// ]
+
+
+
+// mularray[0][0]=java
+
+// let mularray=[["java","javascript"],["python","dbms","dotnet","mongodb",],["DSA","OS"]]
+
+
+let mularray=[
+    ["java","javascript"],
+        
+    ["python","dbms","dotnet","mongodb",["cyber-sec","os",["c++","Ruby"]]],
+          
+    ["DSA","OS",["2","4","6",["34","45","57"["23"]]]]
+        
+ ]
+ console.log(mularray[1][4][2][0])
+
+ console.log("print 45")
+ console.log("anil",mularray[2][2][1])//4 
+ console.log("shoeb",mularray[2][2][3][1]) 
+ console.log("afzal",mularray[2][2][3][1]) 
+ console.log("monish",mularray[2][2][3][1]) 
+ console.log("what should be print here ???",mularray[2][1][3]) 
+ console.log("what should be print here ???",mularray[1][1][4]) 
+ console.log("what should be print here ???",mularray[1][4]) 
+ console.log("what should be print here ???",mularray[1][4][1]) 
+ console.log("what should be print here ???",mularray[1][4][2]) 
+ console.log("what should be print here ???",mularray[1][4][2][1]) 
+
+//  mularray.push("1,3,46,8,8,89,8")
+// mularray[0].push("1,3,46,8,8,89,8")
+
+//  console.log(mularray)
+
+// mularray.pop()
+// mularray[1][4].pop()
+// console.log(mularray)
+
+
+
+// iterating over studentdata 
+// iterating over studentdata 
+// iterating over studentdata 
+// iterating over studentdata 
+// iterating over studentdata 
+// iterating over studentdata 
+
+
+
+
+let studentdata1=[
+    ['jack',23],
+    ['sara',25]
+];
+// iterating over studentdata 
+
+studentdata1.forEach((val)=>{
+        val.forEach((data,ind)=>{
+            console.log("name is ",data,"  index is ",ind)
+        })
+
+})
+
+
+2.// iterating over studentdata for-----of 
+// let studentdata=[
+//     ['sam',23],
+//     ['jesica',25]
+// ];
+// for (let i of studentdata){
+//     for (let j of i){
+//         console.log(j)
+//     }
+// }
+
+
+
