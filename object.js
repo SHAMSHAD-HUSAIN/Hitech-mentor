@@ -16,6 +16,7 @@ const student ={
 }
 
 console.log(typeof student)
+console.log( student)
 // key=leftside values
 // values=rightsidevalues
 
@@ -74,3 +75,130 @@ car.name="BMW";
 car.colour="Red";
 car.speed();
 console.log(car.colour)
+
+// this is keyword which is used for access the value of same objects within methods
+
+
+const Boy ={
+    name:"Shamshad",
+    rollno:50,
+    greet: function (){
+        let surname="Husain"
+        console.log("hello"+" "+this.name+ " "+surname, this.rollno) //this is refering same object
+    }
+}
+
+Boy.greet()
+
+
+// constructor  is a function which is used to create objects!!
+
+// without parameter
+
+// function Men (){
+//     this.name="Shamshad",
+//     this.age=80
+// }
+
+
+// create an objects
+
+//    const men1 =new Men();
+//    const men2 =new Men();
+
+//    console.log(men1.age)
+//    console.log(men2.name)
+
+
+
+// passing argument 
+   function Men (Men_name,Men_Age){
+    this.name=Men_name,
+    this.age=Men_Age
+
+}
+
+
+// create an objects
+
+   const men1 =new Men("shamshad",50);
+   const men2 =new Men("anil",20);
+   const men3 =new Men("afjal",21);
+   const men4 =new Men("mujeeb",22);
+   const men5 =new Men("monish",25);
+
+
+//    access and print
+   console.log(men1.age)
+   console.log(men2.name,men2.age)
+   console.log(men3.name)
+   console.log(men4.name)
+   console.log(men5.name)
+
+
+// how to add a new property to one particular objects
+
+men2.address="moradabad";
+
+console.log(men2.address)
+console.log(men1.address)   //undefined
+
+// how to change the property of an object 
+console.log("before change the name property",men4.name)
+
+men4.name="shuaib";
+console.log("after change the name property",men4.name)
+
+// adding a method into particular object
+
+men2.greet=function (){
+    console.log("hello anil!!!")
+}
+
+men2.greet()
+
+
+// prototype
+// prototype
+// prototype
+// prototype
+// prototype   is used for adding property in constructor
+console.log(men2)
+
+// adding property into construcor
+Men.prototype.height=20;
+
+console.log(men1.height)
+console.log(men2.height)
+console.log(men3.height)
+console.log(men2.height)
+console.log(men3.height)
+// adding methods into construcor
+
+
+// without parameter
+Men.prototype.add= function (){
+    let a=4;
+    let b=5;
+    let c=a+b;
+    console.log(c)
+}
+
+men1.add()
+men2.add()
+men3.add()
+men1.add()
+
+// with parametr
+Men.prototype.Subtraction= function (a,b){
+   
+    let c=a-b;
+    console.log("subtraction",c)
+}
+
+men1.Subtraction(2,5)
+men2.Subtraction(36,7)
+men3.Subtraction(37,9)
+men4.Subtraction(87,6)
+
+
