@@ -86,35 +86,213 @@
 // Promise
 // async /await
 
-function fn1(){
-  setTimeout(()=>{
-    console.log(" hello , i am roll no 1. after 2 sec")
+// function fn1(){
+//   setTimeout(()=>{
+//     console.log(" hello , i am roll no 1. after 2 sec")
   
-  },6000)
-}
+//   },6000)
+// }
 
-function fn2(){
+// function fn2(){
+//   setTimeout(()=>{
+//     console.log(" hello , i am roll no 2. after 2 sec")
+  
+//   },1000)
+// }
+
+// function fn3(){
+//   setTimeout(()=>{
+//     console.log(" hello , i am roll no 3.after 2 sec ")
+  
+//   },3000)
+// }
+
+// function fn4(){
+//   setTimeout(()=>{
+//     console.log(" hello , i am roll no 4.after 2 sec")
+  
+//   },5000)
+// }
+
+// fn1();
+// fn2();
+// fn3();
+// fn4();
+
+
+
+// register
+// send email 
+// login 
+// get user data 
+// diplay data
+
+
+// function waitForthreeSeconds(){
+//   let ms=3000+ new Date().getTime();
+//   while (new Date()<ms){}
+// }
+
+// function register(){
+//   waitForthreeSeconds()
+//   console.log("register here!!")
+// };
+// function sendEmail(){
+//   waitForthreeSeconds()
+
+//   console.log("registration is completed!!")
+// }
+// function logIn(){
+//   waitForthreeSeconds()
+
+//   console.log("welcome user!!!")
+// }
+// function getUserData(){
+//   waitForthreeSeconds()
+
+//   console.log("you found your data!!!")
+// }
+// function displayUserData(){
+//   waitForthreeSeconds()
+
+//   console.log("display data is here !!!")
+// }
+
+
+
+// register()
+// sendEmail()
+// logIn()
+// getUserData()
+// displayUserData()
+
+// console.log("other code !!!!")
+
+
+// async 
+// async 
+// async 
+// async 
+
+// function waitForthreeSeconds(){
+//   let ms=3000+ new Date().getTime();
+//   while (new Date()<ms){}
+// }
+
+// function register(){
+// setTimeout(()=>{
+//    console.log("register here!!")
+//   },3000)
+ 
+// };
+
+// function sendEmail(){
+
+// setTimeout(()=>{
+//   console.log("sendemail is completed!!")
+
+// },1000)
+// }
+// function logIn(){
+
+//   setTimeout(()=>{
+//     console.log("welcome user!!!")
+
+//   },2000)
+// }
+// function getUserData(){
+//   setTimeout(()=>{
+//     console.log("you found your data!!!")
+
+//   },3000)
+// }
+// function displayUserData(){
+//   setTimeout(()=>{
+//   console.log("display data is here !!!")
+
+//   },4000)
+
+// }
+
+
+
+// register( )
+// sendEmail()
+// logIn()
+// getUserData()
+// displayUserData()
+
+// console.log("other code !!!!")
+
+
+
+
+
+
+// example:2 handle async work !!!!
+
+function register(callback){
   setTimeout(()=>{
-    console.log(" hello , i am roll no 2. after 2 sec")
+     console.log("register here!!")
+     callback()
+    },3000)
+   
+  };
+  
+  function sendEmail( callback){
+  
+  setTimeout(()=>{
+    console.log("sendemail is completed!!")
+    callback();
   
   },1000)
-}
-
-function fn3(){
-  setTimeout(()=>{
-    console.log(" hello , i am roll no 3.after 2 sec ")
+  }
+  function logIn( callback){
   
-  },3000)
-}
-
-function fn4(){
-  setTimeout(()=>{
-    console.log(" hello , i am roll no 4.after 2 sec")
+    setTimeout(()=>{
+      console.log("welcome login  user!!!")
+      callback();
   
-  },5000)
-}
+    },2000)
+  }
+  function getUserData(callback){
+    setTimeout(()=>{
+      console.log("you found your getuserdata!!!")
+      callback()
+  
+    },3000)
+  }
+  function displayUserData(){
+    setTimeout(()=>{
+    console.log("display data is here !!!")
+  
+    },4000)
+  
+  }
+  
+  // callbackhell
+  
+  register( function (){
+    sendEmail( function (){
+      logIn( function (){
+        getUserData( function (){
+          displayUserData()
+        })
+     
+      })
+ 
+    })
+  
+  } )
+  
+  
+  console.log("other code !!!!")
+  
 
-fn1();
-fn2();
-fn3();
-fn4();
+
+
+
+  // function number(a){
+  //   console.log(a)
+  // }
+  // number(3);
