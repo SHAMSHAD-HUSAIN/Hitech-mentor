@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading" onmouseenter="changecolor()"  onmouseleave="oldcolor()" onpointerdown="newColor()" style="background-color: blue;">my bulb on/off project!</h1>
+    <img id="myimage" src="/images/pic_bulboff.gif" width="100" height="180" >
+    <button type="button" onclick="light(1)">on</button>
+    <button type="button"  onclick="light(0)">off</button>
+    <p class="text" onscroll="scrollmove()" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt reiciendis itaque optio recusandae eaque perferendis maxime amet veritatis laudantium distinctio blanditiis, beatae illum modi quis consequatur aliquid quidem architecto! Omnis in temporibus voluptates quae eum nostrum dolor placeat aut dicta ex consequuntur at laudantium consequatur obcaecati ipsum adipisci deserunt, consectetur eos possimus fugiat aperiam! Libero molestiae suscipit natus soluta doloremque veniam nesciunt fugiat officiis quasi ratione quo distinctio impedit facilis id velit tempore dolores minus, eligendi, repellat pariatur, harum dolorem unde. Commodi architecto officiis, sint, quidem, suscipit atque hic minus at quia impedit totam eius! Molestiae fuga aliquam debitis a quo non, quibusdam dolorem mollitia reprehenderit molestias officia quod quia ipsum amet nesciunt dicta nostrum assumenda, iusto dolorum? Consequatur accusantium incidunt, eius itaque placeat expedita nisi aspernatur id animi quibusdam natus provident impedit quia laborum est molestias adipisci, tempora repellat voluptatem alias veritatis libero. Doloremque deserunt dicta voluptas inventore explicabo voluptatum fuga labore error porro, alias nemo ea voluptates facilis odio a laboriosam doloribus. Eaque, voluptatibus eum molestiae inventore esse porro vero quos voluptatem dolor modi ipsam nemo distinctio ipsum non aliquid quisquam atque itaque aliquam ullam quo facere sequi eveniet soluta dolorem? Atque dignissimos distinctio repellat blanditiis voluptatum illo facilis est officia nisi. Similique, veritatis hic debitis odit placeat, molestiae illo dolores commodi quae officiis quaerat modi eum neque aliquam id saepe vero repellat quasi nemo autem nulla tempore dignissimos sunt quos. Debitis aspernatur eaque expedita assumenda vitae rerum voluptate necessitatibus saepe quisquam repellendus esse, hic dolorum amet veritatis, adipisci nemo dolorem eveniet quaerat laboriosam id quas deleniti sint iusto autem. Assumenda quas, minus ipsam provident magnam sapiente fuga, exercitationem debitis totam soluta expedita consequuntur illum praesentium pariatur. Saepe explicabo obcaecati libero quo provident corrupti molestiae! Vel, unde velit quisquam corrupti, quod necessitatibus recusandae nostrum consequatur tenetur tempore dignissimos itaque iusto eos in magnam adipisci quibusdam harum praesentium aspernatur cum ratione eaque repellendus, dolores asperiores! Quia atque corporis, accusantium laborum provident adipisci debitis consequuntur et suscipit libero velit, voluptates quam culpa laudantium quas praesentium officiis assumenda possimus nemo hic mollitia dicta ad sed architecto. Eaque incidunt dicta assumenda a mollitia nisi at voluptatem odio impedit praesentium sapiente cupiditate harum optio repellat, inventore magnam obcaecati maiores. Amet officia accusantium nisi fugiat! Est suscipit sed nobis aspernatur natus maiores exercitationem eligendi corporis unde, doloremque quod facilis sint perferendis optio tempore voluptatem quidem, rem dolorum magni omnis obcaecati velit cum odio dolores! Dicta accusantium repudiandae enim quod error autem mollitia, architecto ea ipsa quasi sequi repellat distinctio voluptas earum in fugiat sed pariatur reprehenderit? Cum nisi facere labore enim architecto hic iure alias quaerat necessitatibus fuga animi ratione magnam quasi exercitationem illo rem deleniti, velit voluptate dignissimos, maxime sint ducimus qui non. Enim, rerum possimus ut, et quasi voluptas repellat modi fugit dolores sint, reprehenderit incidunt nam consequatur quos praesentium velit? Ullam aspernatur ea incidunt doloremque voluptatibus obcaecati culpa, soluta voluptates dolor iste repellat dolore 
+        hic exercitationem quaerat temporibus cupiditate eligendi illum porro.
+         Aspernatur rem asperiores blanditiis, sint animi tempore nemo corrupti.</p>
+ 
+
+    <script>
+    //   function lightOn(){
+    //     let pic="/images/pic_bulbon-on.gif" 
+    //     document.getElementById("myimage").src=pic
+    //   }
+
+    //   function lightoff(){
+    //     let pic="/images/pic_bulboff.gif" 
+    //     document.getElementById("myimage").src=pic
+    //   }
+
+
+    function light(b){
+        let pic;
+        if(b==0){
+            pic="/images/pic_bulboff.gif"
+        }else{
+            pic="/images/pic_bulbon-on.gif"
+        }
+
+        document.getElementById("myimage").src=pic
+    }
+
+    function changecolor(){
+        document.getElementById("heading").style.backgroundColor="red"  
+    }
+    function oldcolor(){
+        document.getElementById("heading").style.backgroundColor="pink"  
+    }
+    function newColor(){
+        document.getElementById("heading").style.backgroundColor="yellow"  
+    }
+ 
+    
+        // if(window.scrollY==1){
+        //     function scrollmove(){  
+        //           document.getElementsByClassName("text").style.backgroundColor="red" 
+        //         }
+        // }
+     
+   
+    </script>
+</body>
+</html>
