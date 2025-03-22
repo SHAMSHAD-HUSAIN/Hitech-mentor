@@ -50,5 +50,19 @@
 // git commit -m "fisrt commit "   it is the record of change
 // git push origin <branch name>     it send code on github repo 
 // git pull origin <branch name>     it  take code from orgin branch 
+//
+
+// TO generate  ssh key
+//ssh-keygen -t ed25519 -C "your email "
+//then enter thrice
+//copy your public sshbkey
+//cat ~/ .ssh/id_ed25519.pub | clip    ===for copy 
+// clip < ~/.ssh/id_ed25519.pub        ===for copy
+
+
+//for configuaration 
+// email:;;; git config --global user.email "your email"
+// username::: git config --global user.name "your name"
+
 
 
